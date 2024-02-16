@@ -1,10 +1,10 @@
+
+
 import hashlib
 
+def sha256sum(filename):
+    with open(filename, 'rb', buffering=0) as f:
+        return hashlib.file_digest(f, 'sha256').hexdigest()
 
-result = haslib.md5(
-
-
-
-
-#nonsense links and refrences
-#https://www.geeksforgeeks.org/md5-hash-python/
+sha256sum("UTA.png")
+print(sha256sum)
